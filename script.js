@@ -1,4 +1,4 @@
-let x, y, radius, angle, Speed, amplitude;
+let x, y, radius, angle, speed, amplitude;
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
@@ -7,7 +7,7 @@ function setup() {
     y = 0;
     radius = 200;
     angle = 0;
-    Speed = 0.5;
+    speed = 0.5;
     amplitude = 250;
 }
 
@@ -32,7 +32,7 @@ function draw() {
     }
 
    
-    Speed *= 0.99;
+    speed *= 0.99;
 
     amplitude *= 0.9995; 
 }
