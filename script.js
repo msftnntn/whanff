@@ -1,4 +1,4 @@
-let x, y, radius, angle, speed, amplitude;
+let x, y, radius, angle, angularSpeed, amplitude;
 
 function setup() {
     createCanvas(windowWidth, windowHeight);
@@ -7,7 +7,7 @@ function setup() {
     y = 0;
     radius = 200;
     angle = 0;
-    speed = 0.5;
+    angularSpeed = 0.5;
     amplitude = 250;
 }
 
@@ -31,8 +31,9 @@ function draw() {
         ellipse(x, y, 20);
     }
 
-   
-    speed *= 0.99;
+    // 점점 느려지게 
+    angularSpeed *= 0.99;
 
+    // 점점 진폭을 줄이기 
     amplitude *= 0.9995; 
 }
